@@ -1,0 +1,18 @@
+.navbar {
+  text-align: center;
+}
+
+.navbar a {
+  color: rgb(150, 150, 200);
+  text-decoration-line: none;
+}
+
+/* for active pages in the navbar */
+.navbar a.active {
+  font-weight: bolder;
+}
+
+.mypic {
+    height: 13em;
+    width: 13em;
+}

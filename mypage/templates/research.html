@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<p>
+These are the kinds of stimuli I am working with at them moment. The underlying mechanism for this speech modification is called noise-vocoding. It simulates the experience that users of a cochlear implant have when listening to speech. Click on the button below for
+the solution. Listen to it again. If it appears clearer now then this is what we call a
+<b>top-down</b> effect.
+</p>
+  
+<center>
+  <audio controls style="1px">
+    <source src="audio/vocoded.wav" type="audio/wav">
+    your browser does not support the audio!
+    </audio>
+    <center><button onclick="displaySentence()"><b>Solution</b></button></center>
+    <br style="margin-bottom: 2em">
+    <p id="sentence">What is he saying?</p>
+</center>
+
+{% endblock %}

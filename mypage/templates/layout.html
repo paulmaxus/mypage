@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>My Page</title>
+        <link rel="stylesheet" href="skeleton.css">
+        <link rel="stylesheet" href="normalize.css">
+        <link rel="stylesheet" href="extendSkeleton.css">
+        <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+        <script>
+          function displaySentence() {
+              document.getElementById("sentence").innerHTML = "'The birch canoe slid on the smooth planks.'";
+          }
+        </script>
+    </head>
+
+    <body>
+
+      <div class="container">
+
+        <div class="navbar" style="padding:10px">
+            {% for page in pages %}
+            <a class="button" {% if page == thisPage %}class="active"{% endif %}
+              href="{{page}}.html">{{page}}</a>
+            {% endfor %}
+        </div>
+
+        <hr>
+        
+        <div class="container">
+
+        {% block content %}{% endblock %}
+
+        </div>
+
+      </div>
+
+    </body>
+
+</html>
