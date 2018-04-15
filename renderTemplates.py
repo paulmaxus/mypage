@@ -1,4 +1,4 @@
-# when running from within RStudio, you have to add anaconda to the path first
+# when running from within RStudio, you have to add anaconda to the path first  
 # 
 # Sys.setenv(PATH = paste("/Users/massimo/anaconda/bin", Sys.getenv("PATH"),sep=":"))
 # system("python --version")
@@ -17,14 +17,17 @@ env = Environment(
 def render_template(filename, context):
     return env.get_template(filename).render(context)
 
-pages = ['home','research','statistics','blog']
+pages = ['intro','research']
+projects = ['shiny','nlp']
 context = {
     'pages' : pages,
+    'projects' : projects,
     'thisPage' : ''
 }
 
 outPath = 'mypage/website/'
-f2render = ['home','research','statistics','blog']
+#f2render = ['index','research','projects','blog']
+f2render = ['index']
 
 for file in f2render:
     outFile = outPath + file + '.html'

@@ -1,11 +1,17 @@
-{% extends "layout.html" %}
-{% block content %}
+<hr>
+<center><h1>Research</a></h1></center>
+<hr>
 
-<p>
-These are the kinds of stimuli I am working with at them moment. The underlying mechanism for this speech modification is called noise-vocoding. It simulates the experience that users of a cochlear implant have when listening to speech. Click on the button below for
-the solution. Listen to it again. If it appears clearer now then this is what we call a
-<b>top-down</b> effect.
-</p>
+<div class="docs-section">  
+  
+  <h6 id="current" class="docs-header">at UCL: adapting to degraded speech</h6>
+  
+  <p>
+  I currently study how humans adapt to degraded signals such as <strong>noise-vocoded speech</strong>. This distortion simulates the experience that users of a cochlear implant have when listening to speech. 
+  </p>
+  <p>
+  Listen to the example below. Is it hard to understand? Check out the solution, then listen to it again. If it appears clearer now then this is what we call a <b>top-down</b> effect. Your brain knows what to look for in the signal!
+  </p>
   
 <center>
   <audio controls style="1px">
@@ -14,7 +20,29 @@ the solution. Listen to it again. If it appears clearer now then this is what we
     </audio>
     <center><button onclick="displaySentence()"><b>Solution</b></button></center>
     <br style="margin-bottom: 2em">
-    <p id="sentence">What is he saying?</p>
+    <p id="sentence"></p>
 </center>
+</div>
 
-{% endblock %}
+  <p>
+    How humans learn and adapt is an exciting research question. It is believed that learning follows a so called <strong>power-law</strong> function. When you start practicing, you will learn a lot in a short amount of time. But the better you get, the slower the progress.
+  </p>
+  
+  <div class="row">
+    <div class="twelve columns">
+    <div class="six columns offset-by-three">
+      <img class="u-max-full-width" src="img/power_law.png">
+    </div>
+    </div>
+  </div>
+  <p>
+
+<div class="docs-section">  
+  <h6 id="inter" class="docs-header">at Cimec: covert visuo-spatial attention</h6>
+  <p>
+    In simple terms, we were exploring a method that can tell you where a person is looking without actually moving her eyes!
+  </p>
+  <p>
+    Specifically, we studied two brain wave components that can be obtained from electrophysiological data (i.e., electrodes attached to the scalp). The electrodes we were interested in are placed symmetrically on both sides of the scalp so that activation patterns of each hemisphere can be compared. If the activation is stronger on one side, it is more likely that the opposite side is attended to (decussation).
+  </p>  
+</div>

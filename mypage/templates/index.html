@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <!-- Basic Page Needs
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <title>maxpaulus</title>
+      
+        <!-- Mobile Specific Metas
+        –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/skeleton.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/custom.css">
+        <link rel="stylesheet" href="css/extendSkeleton.css">
+        <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah" rel="stylesheet">
+        <script src="js/jquery.min.js"></script>
+        <script src="js/site.js"></script>
+        <script src="scripts/flotr2.min.js"></script>
+        <script>
+          function displaySentence() {
+              document.getElementById("sentence").innerHTML = "'The birch canoe slid on the smooth planks.'";
+          }
+        </script>
+    </head>
+
+    <body>
+      
+      <div class="container">
+        
+        <div class="navbar-spacer"></div>
+        <div class="navbar">
+          <div class="container">
+            <ul class="navbar-list">
+              {% for page in pages %}
+              <li class="navbar-item"><a class="navbar-link" href="#{{page}}">{{page}}</a></li>
+              {% endfor %}
+              <li class="navbar-item">
+                <a class="navbar-link" href="#" data-popover="#codeNavPopover">Projects</a>
+                <div id="codeNavPopover" class="popover">
+                  <ul class="popover-list">
+                    {% for project in projects %}
+                    <li class="popover-item">
+                      <a class="popover-link" href="#{{project}}">{{project}}</a>
+                    </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              <li class="navbar-item"><a class="navbar-link" target="_blank" href="https://www.linkedin.com/in/maximillian-paulus-739ba4142/">Linkedin</a></li>
+              <li class="navbar-item"><a class="navbar-link" target="_blank" href="https://www.github.com/paulmaxus">GitHub</a></li>
+            </ul>
+          </div>
+        </div>
+        
+        {% for page in pages %}
+        <div class="include" id="{{page}}">
+          {% include page+'.html' %}
+        <!--{% block content %}{% endblock %}-->
+        </div>
+        {% endfor %}
+        
+        {% for project in projects %}
+        <div class="include" id="{{project}}">
+          {% include project+'.html' %}
+        </div>
+        {% endfor %}
+
+      </div>
+
+    </body>
+
+</html>
