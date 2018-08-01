@@ -4,9 +4,9 @@
           <!-- Basic Page Needs
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
         <meta charset="utf-8">
-        <meta name="description" content="">
-        <meta name="author" content="">
-        <title>maxpaulus</title>
+        <meta name="description" content="This is the personal website of Max Paulus, computational linguist, hearing and ux researcher with interests in psychology and physiology">
+        <meta name="author" content="maximillian paulus">
+        <title>max paulus</title>
       
         <!-- Mobile Specific Metas
         –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -20,10 +20,9 @@
         <script src="js/jquery.min.js"></script>
         <script src="js/site.js"></script>
         <script src="scripts/flotr2.min.js"></script>
+        <script src="js/play_voc.js"></script>
         <script>
-          function displaySentence() {
-              document.getElementById("sentence").innerHTML = "'The birch canoe slid on the smooth planks.'";
-          }
+         
         </script>
     </head>
 
@@ -39,7 +38,7 @@
               <li class="navbar-item"><a class="navbar-link" href="#{{page}}">{{page}}</a></li>
               {% endfor %}
               <li class="navbar-item">
-                <a class="navbar-link" href="#" data-popover="#codeNavPopover">Projects</a>
+                <a class="navbar-link" href="#" data-popover="#codeNavPopover">Side Projects</a>
                 <div id="codeNavPopover" class="popover">
                   <ul class="popover-list">
                     {% for project in projects %}
@@ -49,8 +48,7 @@
                     {% endfor %}
                   </ul>
                 </div>
-              <li class="navbar-item"><a class="navbar-link" target="_blank" href="https://www.linkedin.com/in/maximillian-paulus-739ba4142/">Linkedin</a></li>
-              <li class="navbar-item"><a class="navbar-link" target="_blank" href="https://www.github.com/paulmaxus">GitHub</a></li>
+              </li>
             </ul>
           </div>
         </div>

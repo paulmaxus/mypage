@@ -4,15 +4,44 @@
 
 <div class="docs-section">  
   
-  <h6 id="current" class="docs-header">at UCL: adapting to degraded speech</h6>
+  <h6 id="current" class="docs-header">Cochlear implants, listening effort and subtitles</h6>
+  
+  <img class="u-max-full-width" src="img/enrich+ucl.png">
   
   <p>
-  I currently study how humans adapt to degraded signals such as <strong>noise-vocoded speech</strong>. This distortion simulates the experience that users of a cochlear implant have when listening to speech. 
-  </p>
-  <p>
-  Listen to the example below. Is it hard to understand? Check out the solution, then listen to it again. If it appears clearer now then this is what we call a <b>top-down</b> effect. Your brain knows what to look for in the signal!
-  </p>
+  I currently study how humans adapt to degraded signals such as <strong>noise-vocoded speech</strong> using behavioural tests and measuring pupil size. Vocoders simulate the experience that users of a cochlear implant have when listening to speech. My research goal is to determine the optimal amount of subtitles needed to enhance speech recognition while lowering listening effort. An application could be machine-generated words displayed on a modified watch or glasses. </p>
+
+<p>Check out <a href="#events">events</a> for progress updates.</p>
+
+<p>
+Cochlear implants (CIs) convey only little spectral information which makes it hard to track fluctuations in pitch. Hence, the perception of music is diminished. <b>Below, you can listen to examples from different music genres and speech, and switch between the natural sound and the CI simulation.</b> You may notice that rhythmic music (e.g., Hip Hop) is much easier to listen to than classical music. This is because the temporal information is preserved in CIs.   
+</p>
+
+<div class="row">
+  <div class="four columns">
+    <select class="u-full-width" id="genre" onchange="crlabel()">
+      <option value="speech">Speech</option>
+      <option value="piano">Classical</option>
+      <option value="rap">Hip Hop</option>
+      <option value="trance">Trance</option>
+      <option value="country">Country</option>
+    </select>
+  </div>
   
+  <div class="four columns"> 
+    <button id="play" class="button" onclick="playAudio()">Play</button>
+    <button id="vocode" class="button" onclick="switcher()">Implant</button>
+  </div>
+  
+   <div class="four columns"> 
+    <div id="copyright">The Adventures of Pinocchio by Carlo Collodi, translated by Carol Della, read by Sherry Crowther; librivox.org</div>
+  </div>
+  
+</div>
+
+</div>
+
+<!--
 <center>
   <audio controls style="1px">
     <source src="audio/vocoded.wav" type="audio/wav">
@@ -23,7 +52,9 @@
     <p id="sentence"></p>
 </center>
 </div>
+-->
 
+<!--
   <p>
     How humans learn and adapt is an exciting research question. It is believed that learning follows a so called <strong>power-law</strong> function. When you start practicing, you will learn a lot in a short amount of time. But the better you get, the slower the progress.
   </p>
@@ -36,13 +67,15 @@
     </div>
   </div>
   <p>
+  
+-->
+
+<hr>
 
 <div class="docs-section">  
-  <h6 id="inter" class="docs-header">at Cimec: covert visuo-spatial attention</h6>
+  <h6 id="inter" class="docs-header">Covert visuo-spatial attention (Università di Trento)</h6>
   <p>
-    In simple terms, we were exploring a method that can tell you where a person is looking without actually moving her eyes!
-  </p>
-  <p>
-    Specifically, we studied two brain wave components that can be obtained from electrophysiological data (i.e., electrodes attached to the scalp). The electrodes we were interested in are placed symmetrically on both sides of the scalp so that activation patterns of each hemisphere can be compared. If the activation is stronger on one side, it is more likely that the opposite side is attended to (decussation).
+    In simple terms, we are exploring a method that can tell us where a person is looking without actually moving her eyes!
+    Specifically, we study two brain wave components that can be obtained from electrophysiological data (i.e., electrodes attached to the scalp). The electrodes are placed symmetrically on both sides of the parieto-occipital scalp so that activation patterns of each hemisphere can be compared. If the activation is stronger on one side, it is more likely that the opposite side is attended to (decussation). Our first experiment is documented in my <a target="_blank" href="docs/colloquium.pdf">thesis defense</a>.
   </p>  
 </div>
